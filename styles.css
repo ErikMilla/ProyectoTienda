@@ -17,11 +17,7 @@ body{
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
-/*para que las imagenes del catalogo*/
-.catalogo .img-thumbnail {
-  width: 100%;
-  height: auto;
-}
+
 .rating {
   direction: rtl; /* Hace que las estrellas se ordenen de derecha a izquierda */
   font-size: 2em;
