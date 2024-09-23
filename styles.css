@@ -13,6 +13,37 @@ body{
     display: flex;
     flex-direction: column;
 }
+/* Para mostrar el menú desplegable al pasar el cursor */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/*para que las imagenes del catalogo*/
+.catalogo .img-thumbnail {
+  width: 100%;
+  height: auto;
+}
+.rating {
+  direction: rtl; /* Hace que las estrellas se ordenen de derecha a izquierda */
+  font-size: 2em;
+}
+
+.rating input {
+  display: none; /* Oculta los botones de radio */
+}
+
+.rating label {
+  color: #ccc; /* Estrellas sin seleccionar */
+  cursor: pointer;
+}
+
+.rating input:checked ~ label {
+  color: #f5b301; /* Estrellas seleccionadas */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #f5b301; /* Cambia el color al pasar el cursor */
+}
 
 .navbar {
     display: flex;

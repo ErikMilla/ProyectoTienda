@@ -9,3 +9,13 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const stars = document.querySelectorAll('.rating input');
+    
+    stars.forEach((star) => {
+        star.addEventListener('change', function() {
+            const rating = this.value;
+            alert(`Calificaste la polera con ${rating} estrellas`);
+        });
+    });
+});
