@@ -17,7 +17,9 @@ body{
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
-
+.card {
+  margin: 20px;
+}
 .rating {
   direction: rtl; /* Hace que las estrellas se ordenen de derecha a izquierda */
   font-size: 2em;
