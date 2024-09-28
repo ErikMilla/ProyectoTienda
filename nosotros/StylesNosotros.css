@@ -1,30 +1,56 @@
 
 /*header y footer*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #ffffff;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+/* Para mostrar el menú desplegable al pasar el cursor */
+.nav-item.dropdown:hover .dropdown-menu {
+display: block;
+}
+.card {
+margin: 20px;
 }
 
-body{
-    background: #ffffff;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-}
 
 .navbar {
-    display: flex;
-    position: relative;
-    width: 100%;
-    z-index: 1001;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: relative;
+  width: 100%; /* Para que la barra de navegación ocupe todo el ancho */
+  z-index: 1001; /* Asegura que quede sobre otros elementos */
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
+.logo {
+max-height: 50px;
+height: auto;
+width: auto; 
+border-radius: 20%;
+}
+.envio-bar {
+background-color: #000;
+color: #fff;
+padding: 10px 0;
+}
+
+.envio-text {
+font-size: 1rem;
+font-weight: bold;
+}
+
+.envio-bar img {
+vertical-align: middle;
+}
 
 footer {
     position: relative;
