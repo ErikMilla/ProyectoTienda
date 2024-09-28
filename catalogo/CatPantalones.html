@@ -15,10 +15,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     
 </head>
-<header>
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Inicio</a>
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../Intranet/imagenes/Logo.jpeg" alt="Logo" class="logo" >
+            </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,29 +39,41 @@
                     <li><a class="dropdown-item" href="../catalogo/CatPolera.html">Poleras</a></li>
                     <li><a class="dropdown-item" href="../catalogo/CatPolos.html">Polos</a></li>
                     <li><a class="dropdown-item" href="../catalogo/CatPantalones.html">Pantalones</a></li>
-                    <li><a class="dropdown-item" href="../catalogo/CatAccesosrios.html">Accesorios</a></li>
                     </ul>
                     </li>
+                    <li class="nav-item dropdown mx-4">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mujer   
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../catalogo/CatPolerasM.html">Poleras</a></li>
+                      <li><a class="dropdown-item" href="../catalogo/CatPolosM.html">Polos</a></li>
+                      <li><a class="dropdown-item" href="../catalogo/CatPantalonesM.html">Pantalones</a></li>
+                      </ul>
+                      </li>
                  
                     </ul>
                 </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../nosotros/Nosotros.html">Nosotros</a>
+            <li class="nav-item mx-4" >
+                <a class="nav-link active" aria-current="page" href="../nosotros/Nosotros.html">NOSOTROS</a>
             </li>
             
-            <li class="nav-item">
-                <a class="nav-link active" href="../SCliente/Servicio-Cliente.html">Servicio al Cliente</a>
+            <li class="nav-item mx-4">
+                <a class="nav-link active" href="../SCliente/Servicio-Cliente.html">SERVICIO AL CLIENTE</a>
             </li>
             </ul>
-            <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn " type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
-            </button>
+            <form class="d-flex" style="width: 35%;">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="height: 45px; font-size: 1.1rem;">
+                <button class="btn d-flex align-items-center justify-content-center" type="submit" style="height: 45px; width: 45px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
             </form>
+            
+            
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
+                <li class="nav-item "> 
                     <a class="nav-link active" href="../Intranet/Intranet.html">Log In</a>
                 </li>
                 <li class="nav-item">
@@ -73,30 +87,54 @@
     </div>
         </div>
     </nav>
-</header>
-<br>
-<br>
-<body>
+    <div class="envio-bar d-flex justify-content-center align-items-center">
+        <span class="mx-2">
+          <img src="../Intranet/imagenes/peru.png" alt="Perú" width="24">
+        </span>
+        <span class="envio-text">🛩️ENVÍOS GRATIS A TODO EL PERÚ🛩️</span>
+        <span class="mx-2">
+          <img src="../Intranet/imagenes/peru.png" alt="Avión" width="24">
+        </span>
+      </div>
     <div class="container-fluid">
         <div class="row">
            
             <div class="col-md-3"> 
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/40.avif" class="card-img-top" alt="Producto 1">
+                    <a href="DetalleProducto.html">
+                    <img src="imagenes/CatPolos/20.JPG" class="card-img-top" alt="Producto 1">
+                </a>
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                   <center><span>5/5</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span></center> 
+                  </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polo Niño Manga Corta Algodón Yamp</h5>
-                        <p class="card-text">S/ 29.90</p>
+                        <h5 class="card-title">POLO CAMISERO</h5>
+                        <p class="card-text">S/ 79.00</p>
                     </div>
                 </div>
             </div>
            
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/44.avif" class="card-img-top" alt="Producto 2">
+                    <img src="imagenes/CatPolos/21.JPG" class="card-img-top" alt="Producto 2">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polo Niño Manga Corta Algodón Dc Originals
+                        <h5 class="card-title">POLO OVERSIZE ESTAMPADO
+
                         </h5>
-                        <p class="card-text">S/ 45.90
+                        <p class="card-text">S/ 49.00
                         </p>
                     </div>
                 </div>
@@ -104,136 +142,252 @@
           
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/42.avif" class="card-img-top" alt="Producto 3">
+                    <img src="imagenes/CatPolos/22,5.JPG" class="card-img-top" alt="Producto 3">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polo Niño Manga Larga Algodón Yamp </h5>
-                        <p class="card-text">S/ 29.99</p>
+                        <h5 class="card-title">POLO OVERSIZE ESTAMPADO</h5>
+                        <p class="card-text">S/ 49.00</p>
                     </div>
                 </div>
             </div>
           
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/45.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/23.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polo Niño Manga Corta Algodón Avengers</h5>
-                        <p class="card-text">S/ 29.93</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card full-width">
-                    <img src="imagenes/CatNiños/43.avif" class="card-img-top" alt="Producto 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Mangalarga Niño chill</h5>
-                        <p class="card-text">S/ 29.90</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card full-width">
-                    <img src="imagenes/CatNiños/46.avif" class="card-img-top" alt="Producto 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Polera Niño Algodón Dc Originals
+                        <h5 class="card-title">POLO OVERSIZE ESTAMPADO
                         </h5>
-                        <p class="card-text">S/ 89.90 </p>
+                        <p class="card-text">S/ 49.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/41.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/24.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polera Niño Algodón Doo Australia
+                        <h5 class="card-title">POLO PIQUÉ FREEDOM
                         </h5>
-                        <p class="card-text">S/ 59.90</p>
+                        <p class="card-text">S/ 79.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/47.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/25.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polera Niño Algodón Yamp
+                        <h5 class="card-title">POLOS BOXY FIT
                         </h5>
-                        <p class="card-text">S/ 34.90</p>
+                        <p class="card-text">S/ 59.00 </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/48.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/27.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polera Niño Algodón Coniglio</h5>
-                        <p class="card-text">S/ 63.92</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card full-width">
-                    <img src="imagenes/CatNiños/50.avif" class="card-img-top" alt="Producto 1" data-hover="imagenes/1.avif">
-                    <div class="card-body">
-                        <h5 class="card-title">Polera Niño Algodón Federation
+                        <h5 class="card-title">POLOS BOXY FIT
                         </h5>
-                        <p class="card-text">S/ 78.92</p>
+                        <p class="card-text">S/ 59.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/49.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/26.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polera Niño Algodón Coniglio </h5>
-                        <p class="card-text">S/41.24</p>
+                        <h5 class="card-title">HODDIE BOXY </h5>
+                        <p class="card-text">S/ 89.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/51.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/28.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Polera Niño Algodón Federation </h5>
-                        <p class="card-text">S/ 41.90</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card full-width">
-                    <img src="imagenes/CatNiños/52.avif" class="card-img-top" alt="Producto 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Pantalón Niño Algodón Federation
+                        <h5 class="card-title">POLO OVERSIZE ESTAMPADO
                         </h5>
-                        <p class="card-text">S/ 51.92</p>
+                        <p class="card-text">S/ S/ 49.90</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/54.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/29.JPG" class="card-img-top" alt="Producto 1" data-hover="imagenes/1.avif">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
-                        <h5 class="card-title">Pantalón Niño Ecko</h5>
-                        <p class="card-text">S/ 109.90</p>
+                        <h5 class="card-title">POLO OVERSIZE ESTAMPADO
+                        </h5>
+                        <p class="card-text">S/ 49.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/55.avif" class="card-img-top" alt="Producto 4">
+                    <img src="imagenes/CatPolos/30.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
+                    <div class="card-body">
+                        <h5 class="card-title">POLO OVERSIZE ESTAMPADO</h5>
+                        <p class="card-text">S/49.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card full-width">
+                    <img src="imagenes/CatPolos/31.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
+                    <div class="card-body">
+                        <h5 class="card-title">POLO OVERSIZE ESTAMPADO</h5>
+                        <p class="card-text">S/ 49.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card full-width">
+                    <img src="imagenes/CatPolos/32.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
+                    <div class="card-body">
+                        <h5 class="card-title">CAMISERO WAFFLE
+                        </h5>
+                        <p class="card-text">S/ 59.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card full-width">
+                    <img src="imagenes/CatPolos/33.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
+                    <div class="card-body">
+                        <h5 class="card-title">CAMISERO WAFFLE </h5>
+                        <p class="card-text">S/ 59.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card full-width">
+                    <img src="imagenes/CatPolos/34.JPG" class="card-img-top" alt="Producto 4">
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                            Pantalón Niño Algodón Mango Kids
+                            CAMISERO WAFFLE
                             </h5>
-                        <p class="card-text"> S/ 119.90</p>
+                        <p class="card-text"> S/ 59.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card full-width">
-                    <img src="imagenes/CatNiños/56.avif" class="card-img-top" alt="Producto 4">                   
+                    <img src="imagenes/CatPolos/35.JPG" class="card-img-top" alt="Producto 4">  
+                    <div class="rating" style="font-size: 1.5rem; text-align: left;">
+                        <center><span>5/5</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span>
+                         <span class="star">&#9733;</span></center> 
+                       </div>                 
                     <div class="card-body">
-                        <h5 class="card-title">Pantalón Niño Algodón Pillin
+                        <h5 class="card-title">
+                            CAMISERO WAFFLE
+
                           </h5>
-                        <p class="card-text">  S/ 47.40 </p>
+                        <p class="card-text">  S/ 59.00 </p>
                         
                     </div>
                 </div>
@@ -242,7 +396,7 @@
         </div>
 <footer class="footer-distributed">
     <div class="footer-left">
-        <h3>Dc<span>Style</span></h3>
+        <img src="../Intranet/imagenes/Logo.jpeg" alt="Logo" class="logo" >
         <p class="footer-company-name">Copyright © 2024 <strong>DC STYLE</strong> Reservados todos los derechos</p>
     </div>
     <div class="footer-center">
@@ -277,3 +431,5 @@
 
     <script src="script.js"></script>
 </body>
+
+
