@@ -10,25 +10,39 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
 
-function mostrarCarrito() {
-    // Obtener el carrito del localStorage
-    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+document.addEventListener("DOMContentLoaded", function() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartItemsContainer = document.getElementById("cart-items");
 
-    let carritoHTML = '';
-
-    // Si el carrito está vacío
-    if (carrito.length === 0) {
-        carritoHTML = '<p>El carrito está vacío</p>';
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = "<p>El carrito está vacío.</p>";
     } else {
-        // Mostrar los productos en el carrito
-        carrito.forEach(producto => {
-            carritoHTML += `<p>${producto.nombre} - S/ ${producto.precio.toFixed(2)}</p>`;
+        cart.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card mb-3";
+            card.innerHTML = `
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="${item.name}">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.name}</h5>
+                            <p class="card-text"><strong>S/ ${item.price}</strong></p>
+                            <p class="card-text">Cantidad: ${item.quantity}</p>
+                            <button class="btn btn-danger" onclick="removeItem('${item.name}')">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            cartItemsContainer.appendChild(card);
         });
     }
+});
 
-    // Insertar el HTML del carrito en el contenedor
-    document.getElementById('carrito').innerHTML = carritoHTML;
+function removeItem(name) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart = cart.filter(item => item.name !== name);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload(); // Recargar la página para mostrar los cambios
 }
-
-// Llamar a la función para mostrar el carrito cuando se cargue la página del carrito
-window.onload = mostrarCarrito;
