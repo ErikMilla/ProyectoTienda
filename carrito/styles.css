@@ -13,10 +13,25 @@ body{
     display: flex;
     flex-direction: column;
 }
-/* Para mostrar el menú desplegable al pasar el cursor */
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+/* Evita la superposición y asegura el correcto posicionamiento */
+.nav-item .dropdown-menu .dropdown-menu {
+  display: none; /* Por defecto oculto */
+  position: absolute; /* Asegura que se posicionen relativos al menú principal */
+  left: 100%; /* Despliega los submenús a la derecha del menú principal */
+  top: 0; /* Alinea el submenú en la parte superior */
+  z-index: 1; /* Asegura que no se superpongan los submenús */
 }
+
+/* Muestra el submenú cuando se hace hover en "Hombre" o "Mujer" */
+.nav-item .dropdown-menu .nav-item:hover > .dropdown-menu {
+  display: block; /* Muestra el submenú */
+}
+
+/* Asegura que los menús "Hombre" y "Mujer" no se tapan entre sí */
+.nav-item .dropdown-menu .nav-item {
+  position: relative;
+}
+
 .card {
   margin: 20px;
 }
