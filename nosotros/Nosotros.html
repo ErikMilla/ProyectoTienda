@@ -172,6 +172,24 @@
         $('#myTab a').removeClass('bold'); 
         $(this).addClass('bold'); 
         });
+        function toggleContent(id) {
+          var content = document.getElementById(id);
+
+          // Ocultar todos los demás contenidos
+          var allContents = document.querySelectorAll('.service-content');
+          allContents.forEach(function(item) {
+              if (item !== content) {
+                  item.style.display = 'none';
+              }
+          });
+
+          // Mostrar o esconder el contenido actual
+          if (content.style.display === 'block') {
+              content.style.display = 'none';
+          } else {
+              content.style.display = 'block';
+          }
+      }
       </script>
         
   </body>
