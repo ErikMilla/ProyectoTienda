@@ -19,6 +19,21 @@ body{
   width: auto; 
   border-radius: 20%;
 }
+.envio-bar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.envio-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.envio-bar img {
+  vertical-align: middle;
+}
+
 
 /* Evita la superposición y asegura el correcto posicionamiento */
 .nav-item .dropdown-menu .dropdown-menu {
